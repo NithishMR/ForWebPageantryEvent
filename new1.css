@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(0,0,0);
+  }
+  h1{
+    text-align: center;
+  }
+  .gradient-background {
+    background: linear-gradient(to right, #1DB954, #191414); /* Spotify green to black gradient */
+  color: white;
+  text-align: center;
+  padding: 50px;
+
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .toggle-btn {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .drawer {
+    width: 0;
+    height: 100%;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: width 0.3s ease-out;
+  }
+  
+  .close-btn {
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+  }
+  
+  .block-section,
+  .testimonial-slider,
+  .radio-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .block-section.show {
+    display: block;
+  }
+  
+  .accordion {
+    max-width: 100%; /* chnaged from 300px to 100%*/
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .accordion-item.open .accordion-content {
+    max-height: 1000px;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+  }
+  
+  .testimonial-item {
+    flex: 0 0 auto;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .star-ratings {
+    color: #ffcc00;
+    font-size: 20px;
+  }
+  
+  .star {
+    margin-right: 5px;
+  }
+  
+  .radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .radio-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff9933;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .radio-label:hover .radio-animation {
+    opacity: 0.8;
+  }
+  
+  .music-player-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+/* ... (previous styles) */
+
+.blog-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .blog-post {
+    margin-bottom: 20px;
+  }
+  
+  .blog-post h3 {
+    color: #333;
+  }
+  
+  /* ... (remaining styles) */
+/* ... (previous styles) */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  /*
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar h1 {
+    color: white;
+    margin: 0;
+    padding: 15px;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .nav-links li {
+    float: left;
+  }
+  
+  .nav-links a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    justify-content: space-around;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+  }
+  
+ */
+ .navbar {
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the container */
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar h1 {
+  color: white;
+  margin: 0;
+  padding: 15px;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make the list items flex containers */
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+  align-items: center; /* Center items along the cross axis */
+  overflow: hidden;
+}
+
+
+
+.nav-links a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+/**/

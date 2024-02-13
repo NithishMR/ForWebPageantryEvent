@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new1.css">
+  <title>Music Website</title>
+</head>
+<body>
+<!-- naviagtion section-->
+<nav class="navbar">
+    <div class="logo">
+      <h1>Music World</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#featured-songs">Featured Songs</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#radio">Radio Stations</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <!-- Add more navigation links as needed -->
+    </ul>
+  </nav>
+  <!-- end of navbar-->
+<div class="gradient-background">
+  <h1>Welcome to the Music World</h1>
+</div>
+<div class="container">
+  <div class="main-content">
+    <section class="block-section">
+      <h2>Featured Songs</h2>
+      <p>Check out our latest and greatest hits!</p>
+      <button onclick="toggleBlockSection()">Read More</button>
+    </section>
+
+    <section class="testimonial-slider">
+      <h2>Testimonials</h2>
+      <div class="slider-container">
+        <div class="testimonial-item">
+          <p>"Great music selection and awesome service!"</p>
+          <div class="star-ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+        <!-- Add more testimonial items as needed -->
+      </div>
+    </section>
+
+    <section class="radio-section">
+      <h2>Choose Your Favorite Radio Station</h2>
+      <div class="radio-container">
+        <label class="radio-label" onclick="selectRadio('station1')">
+          <input type="radio" name="radio" value="station1" id="radio1"> Station 1
+          <span class="radio-animation"></span>
+        </label>
+
+        <label class="radio-label" onclick="selectRadio('station2')">
+          <input type="radio" name="radio" value="station2" id="radio2"> Station 2
+          <span class="radio-animation"></span>
+        </label>
+
+        <label class="radio-label" onclick="selectRadio('station3')">
+          <input type="radio" name="radio" value="station3" id="radio3"> Station 3
+          <span class="radio-animation"></span>
+        </label>
+        <!-- Add more radio stations as needed -->
+      </div>
+    </section>
+  </div>
+<!--
+  <button class="toggle-btn" onclick="toggleDrawer()">Toggle Drawer</button>
+    <div class="drawer" id="drawer">
+    <button class="close-btn" onclick="toggleDrawer()">Close</button>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">Genres</div>
+        <div class="accordion-content">
+          <p>Rock</p>
+          <p>Pop</p>
+          <p>Jazz</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">Artists</div>
+        <div class="accordion-content">
+          <p>John Doe</p>
+          <p>Jane Smith</p>
+          <p>Michael Jackson</p>
+        </div>
+      </div>
+       Add more accordion sections as needed -->
+       <section class="music-player-section">
+        <h2>Music Player</h2>
+        <audio id="musicPlayer" controls>
+          <source src="" type="audio/mp3">
+          Your browser does not support the audio tag.
+        </audio>
+        <select id="songList" onchange="playSelectedSong()">
+          <option value="song1">Song 1</option>
+          <option value="song2">Song 2</option>
+          <option value="song3">Song 3</option>
+          <!-- Add more songs as needed -->
+        </select>
+      </section>
+      <!-- ... (previous code) -->
+      
+      <div class="main-content">
+          <section class="block-section">
+            <h2>Featured Songs</h2>
+            <p>Check out our latest and greatest hits!</p>
+            <button onclick="toggleBlockSection()">Read More</button>
+          </section>
+        
+          <section class="testimonial-slider">
+            <h2>Testimonials</h2>
+            <div class="slider-container">
+              <div class="testimonial-item">
+                <p>"Great music selection and awesome service!"</p>
+                <div class="star-ratings">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9734;</span>
+                </div>
+              </div>
+              <!-- Add more testimonial items as needed -->
+            </div>
+          </section>
+        
+          <section class="radio-section">
+            <h2>Choose Your Favorite Radio Station</h2>
+            <div class="radio-container">
+              <label class="radio-label" onclick="selectRadio('station1')">
+                <input type="radio" name="radio" value="station1" id="radio1"> Station 1
+                <span class="radio-animation"></span>
+              </label>
+        
+              <label class="radio-label" onclick="selectRadio('station2')">
+                <input type="radio" name="radio" value="station2" id="radio2"> Station 2
+                <span class="radio-animation"></span>
+              </label>
+        
+              <label class="radio-label" onclick="selectRadio('station3')">
+                <input type="radio" name="radio" value="station3" id="radio3"> Station 3
+                <span class="radio-animation"></span>
+              </label>
+              <!-- Add more radio stations as needed -->
+            </div>
+          </section>
+        
+          <section class="blog-section">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+              <h3>Post Title 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam augue sit amet gravida pretium.</p>
+            </div>
+            <div class="blog-post">
+              <h3>Post Title 2</h3>
+              <p>Nulla facilisi. Proin vel fermentum velit. Quisque vel justo in libero tristique fermentum.</p>
+            </div>
+            <!-- Add more blog posts as needed -->
+          </section>
+        
+        </div>
+        
+    </div>
+</div>
+</div> 
+
+
+  
+
+  <!-- ... (remaining code) -->
+  
+
+<script src="new1.js"></script>
+</body>
+</html>

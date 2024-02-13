@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Music Website</title>
+</head>
+<body>
+  <!-- Navigation section -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Music World</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#featured-songs">Featured Songs</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#radio">Radio Stations</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <!-- Add more navigation links as needed -->
+    </ul>
+  </nav>
+  <!-- End of navbar -->
+
+  <div class="gradient-background">
+    <h1>Welcome to the Music World</h1>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <section class="block-section">
+        <h2>Featured Songs</h2>
+        <p>Check out our latest and greatest hits!</p>
+        <button onclick="toggleBlockSection()">Read More</button>
+      </section>
+
+      <section  id="testimonials" class="testimonial-slider">
+        <h2>Testimonials</h2>
+        <div class="slider-container">
+          <div class="testimonial-item">
+            <p>"Great music selection and awesome service!"</p>
+            <div class="star-ratings">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+            </div>
+          </div>
+          <!-- Add more testimonial items as needed -->
+        </div>
+      </section>
+
+      <section id ="radio" class="radio-section">
+        <h2>Choose Your Favorite Radio Station</h2>
+        <div class="radio-container">
+          <label class="radio-label" onclick="selectRadio('station1')">
+            <input type="radio" name="radio" value="station1" id="radio1"> Station 1
+            <span class="radio-animation"></span>
+          </label>
+
+          <label class="radio-label" onclick="selectRadio('station2')">
+            <input type="radio" name="radio" value="station2" id="radio2"> Station 2
+            <span class="radio-animation"></span>
+          </label>
+
+          <label class="radio-label" onclick="selectRadio('station3')">
+            <input type="radio" name="radio" value="station3" id="radio3"> Station 3
+            <span class="radio-animation"></span>
+          </label>
+          <!-- Add more radio stations as needed -->
+        </div>
+      </section>
+    </div>
+
+  </div>
+  <section class="music-player-section">
+    <h2>Music Player</h2>
+    <audio id="musicPlayer" controls>
+      <source src="sampleaudio.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+    <select id="songList" onchange="playSelectedSong()">
+      <option value="song1">Song 1</option>
+      <option value="song2">Song 2</option>
+      <option value="song3">Song 3</option>
+    </select>
+  </section>
+
+  <div class="main-content">
+    <section class="block-section">
+      <h2>Featured Songs</h2>
+      <p>Check out our latest and greatest hits!</p>
+      <button onclick="toggleBlockSection()">Read More</button>
+    </section>
+
+    <section class="testimonial-slider">
+      <h2>Testimonials</h2>
+      <div class="slider-container">
+        <div class="testimonial-item">
+          <p>"Great music selection and awesome service!"</p>
+          <div class="star-ratings">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id = "blog" class="blog-section">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-post">
+        <h3>Post Title 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam augue sit amet gravida pretium.</p>
+      </div>
+      <div class="blog-post">
+        <h3>Post Title 2</h3>
+        <p>Nulla facilisi. Proin vel fermentum velit. Quisque vel justo in libero tristique fermentum.</p>
+      </div>
+    </section>
+  </div>
+
+<!-- Add this div at the end of your body section -->
+<div id="cookiesPopup" class="cookies-popup">
+  <div class="cookies-content">
+    <p>This website uses cookies to ensure you get the best experience. <a href="#" onclick="acceptCookies()">Accept</a></p>
+  </div>
+</div>
+<!-- Add this button/icon wherever you want -->
+<!-- Add this button wherever you want -->
+<button class="download-csv-btn" onclick="downloadCSV()">Download CSV</button>
+  <script src="script.js"></script>
+</body>
+</html>
